@@ -9,5 +9,6 @@
 %body{:id => params[:controller] + '-' + params[:action] }
   %nav.navbar.navbar-default
     %h1.navbar-brand Agape Guestbook
-    %button.btn.btn-primary.pull-right.signin Connect with Facebook
+    %button.btn.btn-primary.pull-right.signin
+      = link_to "Connect with Facebook", new_user_path
   = yield

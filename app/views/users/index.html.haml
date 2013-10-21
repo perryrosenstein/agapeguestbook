@@ -11,6 +11,14 @@
               %span #{user.arrival_date.strftime("%b %-d")}
               &ndash;
               %span #{user.departure_date.strftime("%b %-d")}
+        .row
+          .col-sm-12
+            .hosted-by
+              %span Hosted by #{user.host}
+        .row
+          .col-sm-12
+            .where-from
+              %span From #{user.where_from}
         - unless user.why_in_sf.empty?
           .row
             .col-sm-12
