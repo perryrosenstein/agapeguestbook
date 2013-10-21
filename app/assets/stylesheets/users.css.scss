@@ -14,10 +14,22 @@
       text-align: center;
     }
   }
-  .why_in_sf {
-    .ldquo {
-      font-size: 400%;
-      font-weight: bold;
+  .user-info {
+    .row {
+      margin-bottom: 0;
+    }
+    .where-from {
+      margin-bottom: 40px;
+    }
+    .why_in_sf {
+      .ldquo {
+        font-size: 400%;
+        font-weight: bold;
+      }
+      .text {
+        font-style: italic;
+        font-size: 150%;
+      }
     }
   }
 }

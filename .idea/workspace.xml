@@ -5,11 +5,11 @@
     <ignored path="guestbook.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/show.html.haml" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1382382621077" ignored="false" />
-    <file path="/users.css.scss" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1382383227954" ignored="false" />
-    <file path="/scaffolds.css.scss" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1382380350506" ignored="false" />
-    <file path="/application.html.haml" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1382388492112" ignored="false" />
-    <file path="/users_controller.rb" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1382381334702" ignored="false" />
-    <file path="/index.html.haml" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1382387807991" ignored="false" />
+    <file path="/users.css.scss" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1382390642364" ignored="false" />
+    <file path="/scaffolds.css.scss" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1382390424530" ignored="false" />
+    <file path="/application.html.haml" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1382390671675" ignored="false" />
+    <file path="/users_controller.rb" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1382389756517" ignored="false" />
+    <file path="/index.html.haml" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1382390484194" ignored="false" />
     <file path="/new.html.haml" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1382388035296" ignored="false" />
     <file path="/_form.html.haml" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1382388711907" ignored="false" />
     <file path="/user.rb" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1382387557748" ignored="false" />
@@ -33,15 +33,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="users.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/users.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="18" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="show.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/users/show.html.haml">
           <provider selected="true" editor-type-id="text-editor">
@@ -51,10 +42,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.haml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.html.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="30" selection-start="365" selection-end="365" vertical-scroll-proportion="-5.0">
+            <state line="6" column="28" selection-start="237" selection-end="237" vertical-scroll-proportion="0.2393617">
               <folding />
             </state>
           </provider>
@@ -78,10 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="users.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="39" selection-start="142" selection-end="142" vertical-scroll-proportion="0.1125">
+            <state line="8" column="3" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -96,19 +87,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/users/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="46" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
+            <state line="6" column="26" selection-start="286" selection-end="286" vertical-scroll-proportion="-1.2">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/index.html.haml">
+      <file leaf-file-name="users.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/users.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="42" selection-start="673" selection-end="673" vertical-scroll-proportion="-6.0">
+            <state line="30" column="24" selection-start="626" selection-end="626" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -117,7 +108,16 @@
       <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="46" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
+            <state line="6" column="67" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scaffolds.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="10" selection-start="374" selection-end="374" vertical-scroll-proportion="-8.076923">
               <folding />
             </state>
           </provider>
@@ -135,24 +135,24 @@
       <list>
         <option value="$PROJECT_DIR$/db/migrate/20131018073757_create_users.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/users/_show.html.haml" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/users.css.scss" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.haml" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/views/users/index.html.haml" />
         <option value="$PROJECT_DIR$/app/views/users/new.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/views/users/_form.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/users.js" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/users/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/users.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="41" />
-    <option name="y" value="26" />
+    <option name="x" value="5" />
+    <option name="y" value="28" />
     <option name="width" value="1280" />
     <option name="height" value="774" />
   </component>
@@ -638,7 +638,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="41" y="26" width="1280" height="774" extended-state="0" />
+    <frame x="5" y="28" width="1280" height="774" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293944" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -729,27 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="1" selection-start="996" selection-end="996" vertical-scroll-proportion="-7.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="46" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/users.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="18" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="46" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
@@ -757,23 +736,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="42" selection-start="673" selection-end="673" vertical-scroll-proportion="-6.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="30" selection-start="365" selection-end="365" vertical-scroll-proportion="-5.0">
           <folding />
         </state>
       </provider>
@@ -801,7 +766,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="39" selection-start="142" selection-end="142" vertical-scroll-proportion="0.1125">
+        <state line="8" column="3" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="67" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="10" selection-start="374" selection-end="374" vertical-scroll-proportion="-8.076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="26" selection-start="286" selection-end="286" vertical-scroll-proportion="-1.2">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/users.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="24" selection-start="626" selection-end="626" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="28" selection-start="237" selection-end="237" vertical-scroll-proportion="0.2393617">
           <folding />
         </state>
       </provider>
