@@ -1,33 +1,22 @@
-%h1 Listing users
-
-%table
-  %tr
-    %th Fbid
-    %th Name
-    %th Email
-    %th Host
-    %th Arrival date
-    %th Departure date
-    %th Where from
-    %th Why in sf
-    %th
-    %th
-    %th
-
+.container
   - @users.each do |user|
-    %tr
-      %td= user.fbid
-      %td= user.name
-      %td= user.email
-      %td= user.host
-      %td= user.arrival_date
-      %td= user.departure_date
-      %td= user.where_from
-      %td= user.why_in_sf
-      %td= link_to 'Show', user
-      %td= link_to 'Edit', edit_user_path(user)
-      %td= link_to 'Destroy', user, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
-= link_to 'New User', new_user_path
+    .row.user
+      .col-sm-2.user-badge
+        = link_to image_tag("http://graph.facebook.com/#{user.fbid}/picture?type=large"), "http://www.facebook.com/#{user.fbid}", :target => "_blank"
+        %span.name #{user.name}
+      .col-sm-10
+        .row
+          .col-sm-12
+            .stay
+              %span #{user.arrival_date.strftime("%b %-d")}
+              &ndash;
+              %span #{user.departure_date.strftime("%b %-d")}
+        - unless user.why_in_sf.empty?
+          .row
+            .col-sm-12
+              .why_in_sf
+                .row
+                  .col-sm-1.ldquo
+                    %span &ldquo;
+                  .col-sm-11.text
+                    %p #{user.why_in_sf}
