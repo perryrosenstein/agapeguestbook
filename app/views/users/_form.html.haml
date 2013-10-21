@@ -1,3 +1,14 @@
+.modal.fade#termsModal
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+        %h4.modal-title Agape guest guidelines
+      .modal-body
+        %p Agape guideline will go here
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", type: "button"} Close
+
 = form_for @user, :html => {:class => "form-horizontal"}  do |f|
   - if @user.errors.any?
     #error_explanation
@@ -39,4 +50,10 @@
       = f.text_area :why_in_sf, :class => "form-control"
   .form-group
     .col-sm-10.col-sm-offset-2
-      = f.submit 'Save', :class => "btn btn-primary"
+      %span
+        = check_box_tag "accept-tos"
+        I have read and understand the
+        = link_to "Agape guest guidelines", "#termsModal", :data => {:toggle => "modal"}
+  .form-group
+    .col-sm-10.col-sm-offset-2
+      = f.submit 'Save', :class => "btn btn-primary disabled", :id => "submit-button"
