@@ -1,0 +1,23 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#users-show {
+  .user-badge {
+    text-align: center;
+    img {
+      height: auto;
+      width: 100%;
+    }
+    .name {
+      font-style: italic;
+      text-align: center;
+    }
+  }
+  .why_in_sf {
+    .ldquo {
+      font-size: 400%;
+      font-weight: bold;
+    }
+  }
+}

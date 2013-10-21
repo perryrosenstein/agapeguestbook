@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  fbid: 
+  name: 
+  email: 
+  host: 
+  arrival_date: 
+  departure_date: 
+  where_from: 
+  why_in_sf: MyText
+
+two:
+  fbid: 
+  name: 
+  email: 
+  host: 
+  arrival_date: 
+  departure_date: 
+  where_from: 
+  why_in_sf: MyText

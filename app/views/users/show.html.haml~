@@ -1,0 +1,30 @@
+%p#notice= notice
+
+%p
+  %b Fbid:
+  = @user.fbid
+%p
+  %b Name:
+  = @user.name
+%p
+  %b Email:
+  = @user.email
+%p
+  %b Host:
+  = @user.host
+%p
+  %b Arrival date:
+  = @user.arrival_date
+%p
+  %b Departure date:
+  = @user.departure_date
+%p
+  %b Where from:
+  = @user.where_from
+%p
+  %b Why in sf:
+  = @user.why_in_sf
+
+= link_to 'Edit', edit_user_path(@user)
+\|
+= link_to 'Back', users_path

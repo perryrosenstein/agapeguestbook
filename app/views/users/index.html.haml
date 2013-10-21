@@ -1,0 +1,33 @@
+%h1 Listing users
+
+%table
+  %tr
+    %th Fbid
+    %th Name
+    %th Email
+    %th Host
+    %th Arrival date
+    %th Departure date
+    %th Where from
+    %th Why in sf
+    %th
+    %th
+    %th
+
+  - @users.each do |user|
+    %tr
+      %td= user.fbid
+      %td= user.name
+      %td= user.email
+      %td= user.host
+      %td= user.arrival_date
+      %td= user.departure_date
+      %td= user.where_from
+      %td= user.why_in_sf
+      %td= link_to 'Show', user
+      %td= link_to 'Edit', edit_user_path(user)
+      %td= link_to 'Destroy', user, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New User', new_user_path
