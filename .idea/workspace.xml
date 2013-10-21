@@ -14,6 +14,7 @@
     <file path="/_form.html.haml" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1382388711907" ignored="false" />
     <file path="/user.rb" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1382387557748" ignored="false" />
     <file path="/users.js" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1382389200639" ignored="false" />
+    <file path="/Gemfile" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1382392122404" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +46,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="8" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.76744187">
+            <state line="57" column="20" selection-start="1258" selection-end="1258" vertical-scroll-proportion="0.76744187">
               <folding />
             </state>
           </provider>
@@ -809,7 +810,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="8" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.76744187">
+        <state line="57" column="20" selection-start="1258" selection-end="1258" vertical-scroll-proportion="0.76744187">
           <folding />
         </state>
       </provider>
