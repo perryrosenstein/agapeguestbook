@@ -4,7 +4,9 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    @users = User.all.order("arrival_date DESC, departure_date DESC")
+    @current_guests = User.where("arrival_date <= ?", Date.today).where("departure_date >= ?", Date.today).order("arrival_date DESC, departure_date DESC, id DESC")
+    @past_guests = User.where("departure_date < ?", Date.today).order("departure_date DESC, arrival_date DESC, id DESC")
+    @upcoming_guests = User.where("arrival_date > ?", Date.today).order("arrival_date DESC, departure_date DESC, id DESC")
   end
 
   # GET /users/1
@@ -16,6 +18,7 @@ class UsersController < ApplicationController
   # GET /users/new
   def new
     @user = User.new
+    @residents = Resident.all.map { |r| [r.name, r.id] }
   end
 
   # GET /users/1/edit
@@ -29,6 +32,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
+        UserMailer.user_created(@user).deliver
         format.html { redirect_to root_path, notice: 'User was successfully created.' }
         format.json { render action: 'show', status: :created, location: @user }
       else

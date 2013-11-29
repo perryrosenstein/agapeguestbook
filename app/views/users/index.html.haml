@@ -1,30 +1,64 @@
-.container
-  - @users.each do |user|
-    .row.user
-      .col-sm-2.user-badge
-        = link_to image_tag("http://graph.facebook.com/#{user.fbid}/picture?type=large"), "http://www.facebook.com/#{user.fbid}", :target => "_blank"
-        %span.name #{user.name}
-      .col-sm-10.user-info
-        .row
-          .col-sm-12
-            .stay
-              %span #{user.arrival_date.strftime("%b %-d")}
-              &ndash;
-              %span #{user.departure_date.strftime("%b %-d")}
-        .row
-          .col-sm-12
-            .hosted-by
-              %span Hosted by #{user.host}
-        .row
-          .col-sm-12
-            .where-from
-              %span From #{user.where_from}
-        - unless user.why_in_sf.empty?
-          .row
-            .col-sm-12
-              .why_in_sf
-                .row
-                  .col-sm-1.ldquo
-                    %span &ldquo;
-                  .col-sm-11.text
-                    %p #{user.why_in_sf}
+-# loop through users, add modals
+.container.content-container
+  .row
+    .col-sm-12
+      %h3 Current guests
+  .row
+  - @current_guests.each do |user|
+    .col-sm-3.user-image
+      = link_to image_tag(user.pic, :class => "fb-pic"), "#", {:class => "user-profile", :data => {:id => user.id}}
+      %p= user.name
+.container.content-container
+  .row
+    .col-sm-12
+      %h3 Upcoming guests
+  .row
+  - @upcoming_guests.each do |user|
+    .col-sm-3.user-image
+      = link_to image_tag(user.pic, :class => "fb-pic"), "#", {:class => "user-profile", :data => {:id => user.id}}
+      %p= user.name
+.container.content-container
+  .row
+    .col-sm-12
+      %h3 Past guests
+  .row
+  - @past_guests.each do |user|
+    .col-sm-3.user-image
+      = link_to image_tag(user.pic, :class => "fb-pic"), "#", {:class => "user-profile", :data => {:id => user.id}}
+      %p= user.name
+
+-#modals
+- (@current_guests + @upcoming_guests + @past_guests).each do |user|
+  %div{:class => "modal fade", :id => "user-#{user.id}"}
+    .modal-dialog
+      .modal-content
+        .modal-header
+          %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+          %h4.modal-title #{user.name}
+        .modal-body
+          = link_to image_tag(user.pic, :class => "fb-pic fb-pic-modal"), "http://www.facebook.com/#{user.fbid}", :target => "_blank"
+          %table
+            %tr.name
+              %th Name:
+              %td #{user.name}
+            %tr.stay
+              %th Dates:
+              %td
+                %span #{user.arrival_date.strftime("%b %-d")}
+                &ndash;
+                %span #{user.departure_date.strftime("%b %-d")}
+            %tr.hosted-by
+              %th Hosted by:
+              %td
+                #{Resident.find(user.host).name}
+            %tr.where-from
+              %th From:
+              %td #{user.where_from}
+            - unless user.why_in_sf.empty?
+              %tr.why_in_sf
+                %th Why in SF?
+                %td #{user.why_in_sf}
+        .modal-footer
+          %button.btn.btn-default{"data-dismiss" => "modal", type: "button"} Close
+
+

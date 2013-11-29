@@ -9,8 +9,16 @@
   %script{src: "http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"}
   = csrf_meta_tags
 %body{:id => params[:controller] + '-' + params[:action] }
-  %nav.navbar.navbar-default
-    %h1.navbar-brand Agape Guestbook
-    %button.btn.btn-primary.pull-right.signin
-      = link_to "Connect with Facebook", new_user_path
+  -#%nav.navbar.navbar-default
+  -#  %h1.navbar-brand Agape Guestbook
+  -#  %button.btn.btn-primary.pull-right.signin
+  -#    = link_to "Connect with Facebook", new_user_path
+  .container.content-container.welcome
+    .row
+      .col-sm-12
+        %h1 Ohai. Welcome to the Agape Guestbook.
+    .row
+      .col-sm-12
+        .options
+          = link_to "+ add yourself", new_user_path
   = yield

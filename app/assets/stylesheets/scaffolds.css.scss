@@ -1,9 +1,21 @@
 body {
-  background: url("http://wallpoper.com/images/00/25/71/46/wood-textures_00257146.jpg");
-  color: white;
+  background: url("http://827guerrero.files.wordpress.com/2013/01/wallpaper.jpg");
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
   font-family: times-new-roman;
   font-size: 15px;
   line-height: 20px;
+}
+
+.content-container {
+  background-color: white;
+  opacity: .95;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 20px;
 }
 
 p, ol, ul, td {
@@ -18,14 +30,17 @@ pre {
 }
 
 a {
-  color: white;
-  &:visited {
-    color: #666;
-  }
-  &:hover {
-    color: white;
-    background-color: #000;
-  }
+  color: #e94f1d;
+  text-decoration: none;
+}
+a:visited {
+  color: #e94f1d;
+}
+a:hover,
+a:focus,
+a:active {
+  color: #85aa0c;
+  text-decoration: none;
 }
 
 div {

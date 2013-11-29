@@ -3,33 +3,33 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #users-index {
-  .user-badge {
-    text-align: center;
-    img {
-      height: auto;
-      width: 100%;
+  .fb-pic {
+    display: block;
+    height: auto;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .modal-body {
+    .fb-pic-modal {
+      float: left;
+      margin-bottom: 20px;
+      margin-right: 10px;
+      width: 180px;
     }
-    .name {
-      font-style: italic;
-      text-align: center;
+    th {
+      padding-right: 20px;
+      text-align: right;
+      width: 120px;
+    }
+    th, td {
+      padding-bottom: 10px;
+      vertical-align: top;
     }
   }
-  .user-info {
-    .row {
-      margin-bottom: 0;
-    }
-    .where-from {
-      margin-bottom: 40px;
-    }
-    .why_in_sf {
-      .ldquo {
-        font-size: 400%;
-        font-weight: bold;
-      }
-      .text {
-        font-style: italic;
-        font-size: 150%;
-      }
-    }
+}
+
+#users-new {
+  h3 {
+    margin-bottom: 40px;
   }
 }

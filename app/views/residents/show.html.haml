@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @resident.name
+%p
+  %b Fbid:
+  = @resident.fbid
+
+= link_to 'Edit', edit_resident_path(@resident)
+\|
+= link_to 'Back', residents_path

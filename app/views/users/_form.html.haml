@@ -17,10 +17,6 @@
         - @user.errors.full_messages.each do |msg|
           %li= msg
   .form-group
-    = f.label :fbid, :class => "col-sm-2 control-label"
-    .col-sm-10
-      = f.text_field :fbid, :class => "form-control"
-  .form-group
     = f.label :name, :class => "col-sm-2 control-label"
     .col-sm-10
       = f.text_field :name, :class => "form-control"
@@ -31,7 +27,7 @@
   .form-group
     = f.label :host, :class => "col-sm-2 control-label"
     .col-sm-10
-      = f.text_field :host, :class => "form-control"
+      = f.select(:host, options_for_select(@residents))
   .form-group
     = f.label :arrival_date, :class => "col-sm-2 control-label"
     .col-sm-10
@@ -41,11 +37,11 @@
     .col-sm-10
       = f.date_field :departure_date, :class => "form-control"
   .form-group
-    = f.label :where_from, :class => "col-sm-2 control-label"
+    = f.label :where_from, "Where are you from?", :class => "col-sm-2 control-label"
     .col-sm-10
       = f.text_field :where_from, :class => "form-control"
   .form-group
-    = f.label :why_in_sf, :class => "col-sm-2 control-label"
+    = f.label :why_in_sf, "What brings you to San Francisco?", :class => "col-sm-2 control-label"
     .col-sm-10
       = f.text_area :why_in_sf, :class => "form-control"
   .form-group

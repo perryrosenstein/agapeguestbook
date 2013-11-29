@@ -1,0 +1,16 @@
+= form_for @resident do |f|
+  - if @resident.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@resident.errors.count, "error")} prohibited this resident from being saved:"
+      %ul
+        - @resident.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :fbid
+    = f.text_field :fbid
+  .actions
+    = f.submit 'Save'

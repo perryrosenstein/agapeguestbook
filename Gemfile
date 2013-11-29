@@ -32,16 +32,16 @@ group :doc do
 end
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Use Capistrano for deployment
-# gem 'capistrano', group: :development
+gem 'capistrano', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+gem 'debugger', group: [:development, :test]
 
 # Core gems
 
@@ -53,6 +53,12 @@ gem "twitter-bootstrap-rails"
 
 gem 'haml-rails'
 
-gem "pg"
+group :development do
+  gem 'sqlite3'
+end
 
-gem 'rails_12factor'
+#group :staging, :production do
+#  gem "pg"
+#end
+
+#gem 'rails_12factor'
