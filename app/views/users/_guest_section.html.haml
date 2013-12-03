@@ -1,0 +1,9 @@
+.container.content-container
+  .row
+    .col-sm-12
+      %h3 #{label}
+  .row
+    - guests.each do |user|
+      .col-sm-3.user-image
+        = link_to image_tag(user.pic, :class => "fb-pic"), "#", {:class => "user-profile", :data => {:id => user.id}}
+        %p= user.name

@@ -3,7 +3,16 @@
   %head
     %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
   %body
-    %h1
-      #{@user.name} was just added.
     %p
-      = link_to "Check it out", "http://www.google.com", :target => "_blank"
+      Perry & Ellie,
+    %p
+      Holy shit! #{@user.name} just signed the guestbook!
+    %ol
+      %li
+        = link_to "Check them out.", "#{root_url}?user_id=#{@user.id}"
+      %li
+        = link_to "Email them if you have any questions.", "mailto:#{@user.email}", :target => "_blank"
+      -#
+        %li
+          = link_to "Spread the good word to Agape.", "mailto:AgapeSF@googlegroups.com?subject="
+          = link_to "Spread the good word to Agape.", "mailto:AgapeSF@googlegroups.com?subject="

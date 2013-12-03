@@ -1,4 +1,5 @@
 Guestbook::Application.routes.draw do
+
   resources :residents
 
   resources :users

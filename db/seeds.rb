@@ -27,3 +27,12 @@ User.create(name: "Alex Kiselev",
             where_from: 'outer space',
             why_in_sf: 'coding out of control'
 )
+User.create(name: "Ian Rowe",
+            email: "ian@ian.com ",
+            fbid: "691247078",
+            host: 6,
+            arrival_date: "2013-10-05",
+            departure_date: "2013-12-31",
+            where_from: 'Wyoming',
+            why_in_sf: 'Work at Airbnb, hang with Dillon, move myself to SF!'
+)

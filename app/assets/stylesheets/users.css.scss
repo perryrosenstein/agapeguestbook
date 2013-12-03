@@ -9,6 +9,16 @@
     margin-bottom: 20px;
     width: 100%;
   }
+  .user-image {
+    p {
+      background: black;
+      bottom: 40px;
+      color: white;
+      opacity: .85;
+      position: relative;
+      text-align: center;
+    }
+  }
   .modal-body {
     .fb-pic-modal {
       float: left;

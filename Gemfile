@@ -53,6 +53,10 @@ gem "twitter-bootstrap-rails"
 
 gem 'haml-rails'
 
+gem 'omniauth-facebook'
+
+gem 'figaro'
+
 group :development do
   gem 'sqlite3'
 end

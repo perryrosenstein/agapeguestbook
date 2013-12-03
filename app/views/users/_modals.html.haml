@@ -1,0 +1,32 @@
+- guests.each do |user|
+  %div{:class => "modal fade", :id => "user-#{user.id}"}
+    .modal-dialog
+      .modal-content
+        .modal-header
+          %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+          %h4.modal-title #{user.name}
+        .modal-body
+          = link_to image_tag(user.pic, :class => "fb-pic fb-pic-modal"), "http://www.facebook.com/#{user.fbid}", :target => "_blank"
+          %table
+            %tr.name
+              %th Name:
+              %td #{user.name}
+            %tr.stay
+              %th Dates:
+              %td
+                %span #{user.arrival_date.strftime("%b %-d")}
+                &ndash;
+                %span #{user.departure_date.strftime("%b %-d")}
+            %tr.hosted-by
+              %th Hosted by:
+              %td
+                #{Resident.find(user.host).name}
+            %tr.where-from
+              %th From:
+              %td #{user.where_from}
+            - unless user.why_in_sf.empty?
+              %tr.why_in_sf
+                %th Why in SF?
+                %td #{user.why_in_sf}
+        .modal-footer
+          %button.btn.btn-default{"data-dismiss" => "modal", type: "button"} Close
