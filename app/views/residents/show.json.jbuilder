@@ -1,1 +1,1 @@
-json.extract! @resident, :name, :fbid, :created_at, :updated_at
+json.extract! @resident, :name, :uid, :created_at, :updated_at

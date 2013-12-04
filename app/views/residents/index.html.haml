@@ -3,7 +3,7 @@
 %table
   %tr
     %th Name
-    %th Fbid
+    %th uid
     %th
     %th
     %th
@@ -11,7 +11,7 @@
   - @residents.each do |resident|
     %tr
       %td= resident.name
-      %td= resident.fbid
+      %td= resident.uid
       %td= link_to 'Show', resident
       %td= link_to 'Edit', edit_resident_path(resident)
       %td= link_to 'Destroy', resident, :method => :delete, :data => { :confirm => 'Are you sure?' }

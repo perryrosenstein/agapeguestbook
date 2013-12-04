@@ -15,13 +15,13 @@ ActiveRecord::Schema.define(version: 20131124234056) do
 
   create_table "residents", force: true do |t|
     t.string   "name"
-    t.string   "fbid"
+    t.string   "email"
+    t.string   "uid"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "users", force: true do |t|
-    t.string   "fbid"
     t.string   "name"
     t.string   "email"
     t.string   "host"
@@ -29,6 +29,10 @@ ActiveRecord::Schema.define(version: 20131124234056) do
     t.date     "departure_date"
     t.string   "where_from"
     t.text     "why_in_sf"
+    t.string   "uid"
+    t.string   "provider"
+    t.string   "oauth_token"
+    t.datetime "oauth_expires_at"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

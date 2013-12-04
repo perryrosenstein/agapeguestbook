@@ -18,7 +18,7 @@ class ResidentsControllerTest < ActionController::TestCase
 
   test "should create resident" do
     assert_difference('Resident.count') do
-      post :create, resident: { fbid: @resident.fbid, name: @resident.name }
+      post :create, resident: { uid: @resident.uid, name: @resident.name }
     end
 
     assert_redirected_to resident_path(assigns(:resident))
@@ -35,7 +35,7 @@ class ResidentsControllerTest < ActionController::TestCase
   end
 
   test "should update resident" do
-    patch :update, id: @resident, resident: { fbid: @resident.fbid, name: @resident.name }
+    patch :update, id: @resident, resident: { uid: @resident.uid, name: @resident.name }
     assert_redirected_to resident_path(assigns(:resident))
   end
 

@@ -9,16 +9,15 @@
   %script{src: "http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"}
   = csrf_meta_tags
 %body{:id => params[:controller] + '-' + params[:action] }
-  -#%nav.navbar.navbar-default
-  -#  %h1.navbar-brand Agape Guestbook
-  -#  %button.btn.btn-primary.pull-right.signin
-  -#    = link_to "Connect with Facebook", new_user_path
   .container.content-container.welcome
     .row
       .col-sm-12
-        %h1 Ohai. Welcome to the Agape Guestbook.
+        %h1
+          Ohai#{", " + current_user.name if current_user}. Welcome to the Agape Guestbook.
+          = link_to "Sign out", signout_path, id: "sign_out" if current_user
     .row
       .col-sm-12
         .options
-          = link_to "+ add yourself", new_user_path
+          - unless current_user
+            = link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in"
   = yield

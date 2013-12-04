@@ -2,8 +2,8 @@
 
 one:
   name: MyString
-  fbid: MyString
+  uid: MyString
 
 two:
   name: MyString
-  fbid: MyString
+  uid: MyString
