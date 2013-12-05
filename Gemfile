@@ -63,11 +63,9 @@ gem 'omniauth-facebook'
 # Create application.yml, git ignore it, etc.
 gem 'figaro'
 
-# Use Sqlite3 db. TO DO: use pg on production, or make sure sqlite3 works there
-gem 'sqlite3'
-
-#group :staging, :production do
-#  gem "pg"
-#end
-
-#gem 'rails_12factor'
+group :production do
+  gem 'pg'
+end
+group :development, :test do
+  gem 'sqlite3'
+end
