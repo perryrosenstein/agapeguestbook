@@ -13,7 +13,7 @@
     .row
       .col-sm-12
         %h1
-          Ohai#{", " + current_user.name if current_user}. Welcome to the Agape Guestbook.
+          Ohai#{", " + current_user.first_name if current_user}. Welcome to the Agape Guestbook.
         %h1.silly-nav
           = link_to "Home", root_url
           = link_to "Update profile", edit_user_path(current_user.id) if current_user

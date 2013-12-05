@@ -6,7 +6,7 @@
     %p
       Perry & Ellie,
     %p
-      Holy shit! #{@user.name} just signed the guestbook!
+      Holy shit! #{@user.first_name} #{@user.last_name} just signed the guestbook!
     %ol
       %li
         = link_to "Check them out.", "#{root_url}?user_id=#{@user.id}"

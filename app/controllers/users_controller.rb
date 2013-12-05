@@ -79,7 +79,7 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:uid, :name, :email, :host, :arrival_date, :departure_date, :where_from, :why_in_sf, :provider, :oauth_token, :oauth_expires_at)
+      params.require(:user).permit(:uid, :first_name, :last_name, :email, :host, :arrival_date, :departure_date, :where_from, :why_in_sf, :provider, :oauth_token, :oauth_expires_at)
     end
 
     def redirect_unauthorized_user

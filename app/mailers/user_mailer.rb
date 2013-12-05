@@ -3,7 +3,7 @@ class UserMailer < ActionMailer::Base
 
   def user_created(user)
     @user = user
-    mail(to: "perryr@gmail.com", subject: "#{@user.name} (ID##{@user.id}) added to Agape Guest Book")
+    mail(to: "perryr@gmail.com", subject: "#{@user.first_name} (ID##{@user.id}) added to Agape Guest Book")
   end
 
   def user_arriving
