@@ -45,21 +45,26 @@ gem 'debugger', group: [:development, :test]
 
 # Core gems
 
+# Use haml
 gem 'haml'
 
-gem 'annotate'
-
-gem "twitter-bootstrap-rails"
-
+# Replace erb with haml as default
 gem 'haml-rails'
 
+# Show structure of model in comments of files
+gem 'annotate'
+
+# Bootstrap for rails
+gem "twitter-bootstrap-rails"
+
+# Use Facebook for authentication
 gem 'omniauth-facebook'
 
+# Create application.yml, git ignore it, etc.
 gem 'figaro'
 
-group :development do
-  gem 'sqlite3'
-end
+# Use Sqlite3 db. TO DO: use pg on production, or make sure sqlite3 works there
+gem 'sqlite3'
 
 #group :staging, :production do
 #  gem "pg"
