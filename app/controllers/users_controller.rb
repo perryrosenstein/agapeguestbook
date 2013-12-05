@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :redirect_unauthorized_user, only: [:edit]
 
   # GET /users
   # GET /users.json
@@ -79,5 +80,9 @@ class UsersController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
       params.require(:user).permit(:uid, :name, :email, :host, :arrival_date, :departure_date, :where_from, :why_in_sf, :provider, :oauth_token, :oauth_expires_at)
+    end
+
+    def redirect_unauthorized_user
+      redirect_to root_url unless current_user && current_user.id == params[:id].to_i
     end
 end
