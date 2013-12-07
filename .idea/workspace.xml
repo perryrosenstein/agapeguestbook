@@ -7,7 +7,7 @@
     <file path="/show.html.haml" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1382382621077" ignored="false" />
     <file path="/users.css.scss" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386270883671" ignored="false" />
     <file path="/scaffolds.css.scss" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386395821059" ignored="false" />
-    <file path="/application.html.haml" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386395800638" ignored="false" />
+    <file path="/application.html.haml" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386395988395" ignored="false" />
     <file path="/users_controller.rb" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386271405272" ignored="false" />
     <file path="/index.html.haml" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386269958769" ignored="false" />
     <file path="/new.html.haml" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386120275242" ignored="false" />
@@ -81,11 +81,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.haml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.html.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="26" selection-start="714" selection-end="730" vertical-scroll-proportion="-9.75">
-              <folding />
+            <state line="24" column="52" selection-start="1224" selection-end="1224" vertical-scroll-proportion="0.84962404">
+              <folding>
+                <marker date="1386395989000" expanded="true" signature="1182:1209" placeholder="= link_to &quot;Home&quot;, root_url " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,10 +110,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scaffolds.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="scaffolds.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="22" selection-start="608" selection-end="608" vertical-scroll-proportion="0.66097564">
+            <state line="26" column="22" selection-start="608" selection-end="608" vertical-scroll-proportion="-10.423077">
               <folding />
             </state>
           </provider>
@@ -159,8 +161,8 @@
         <option value="$PROJECT_DIR$/config/application_EXAMPLE.yml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
       </list>
     </option>
   </component>
@@ -959,17 +961,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="26" selection-start="714" selection-end="730" vertical-scroll-proportion="-9.75">
+        <state line="26" column="22" selection-start="608" selection-end="608" vertical-scroll-proportion="-10.423077">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="22" selection-start="608" selection-end="608" vertical-scroll-proportion="0.66097564">
-          <folding />
+        <state line="24" column="52" selection-start="1224" selection-end="1224" vertical-scroll-proportion="0.84962404">
+          <folding>
+            <marker date="1386395989000" expanded="true" signature="1182:1209" placeholder="= link_to &quot;Home&quot;, root_url " />
+          </folding>
         </state>
       </provider>
     </entry>
