@@ -5,9 +5,22 @@ body {
   -o-background-size: cover !important;
   background-size: cover !important;
   background-attachment: fixed !important;
-  font-family: times-new-roman;
+  color: #36312d;
+  font-family: Enriqueta, georgia, serif;
   font-size: 15px;
-  line-height: 20px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #e94f1d;
+  font-weight: 300;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Muli, Helvetica, Arial, sans-serif;
 }
 
 .content-container {
@@ -19,7 +32,6 @@ body {
 }
 
 p, ol, ul, td {
-  font-family: times-new-roman;
   line-height: 20px;
 }
 
