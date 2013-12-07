@@ -1,0 +1,11 @@
+# used to setup sending emails from rails app in ActionMailer::Base.smtp_settings in config/initializers/setup_mail.rb e.g. agapeguestbook@gmail.com, pw: agapelove.
+GMAIL_USERNAME: yourgmailusername
+GMAIL_PASSWORD: password123
+
+# facebook app credentials. create fb apps at http://developers.facebook.com/apps
+FACEBOOK_APP_ID: 1437217176506419
+FACEBOOK_SECRET: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+production:
+  FACEBOOK_APP_ID: 594585233924098
+  FACEBOOK_SECRET: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
