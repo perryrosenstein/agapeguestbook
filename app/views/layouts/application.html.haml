@@ -13,10 +13,15 @@
     .row
       .col-sm-12
         %h1
-          Ohai#{", " + current_user.first_name if current_user}. Welcome to the Agape Guestbook.
+          = link_to "Ohai#{', ' + current_user.first_name if current_user}. Welcome to the Agape Guestbook.", root_url
+        %p#bonnie-greeting
+          We're so glad you're home!
+        - unless current_user
+          %p
+            If you've ever been a guest at Agape, even just for a night crashing on the fluff, why don't you take a minute to #{link_to "sign our guest book", "/auth/facebook", id: "sign_in"}?
+          %p
+            (It'll ask you to connect to Facebook. Don't be alarmed. We only ask so that we can add your beautiful face to the site.)
         %p.silly-nav
-          = link_to "Home", root_url
           = link_to "Update profile", edit_user_path(current_user.id) if current_user
           = link_to "Sign out", signout_path, id: "sign_out" if current_user
-          = link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" unless current_user
   = yield

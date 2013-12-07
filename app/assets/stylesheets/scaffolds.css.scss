@@ -16,13 +16,15 @@ body, h2, h3, h4, h5, h6, label {
 }
 
 h1 {
-  color: #e94f1d;
   font: {
     family: Muli, Helvetica, Arial, sans-serif;
     weight: 300;
   }
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
 
+p#bonnie-greeting {
+  margin-bottom: 20px;
 }
 
 .content-container {
@@ -101,7 +103,6 @@ div {
 }
 
 .silly-nav {
-  padding-left: 4px;
   a {
     display: inline-block;
     margin: 0 20px 0 0;
