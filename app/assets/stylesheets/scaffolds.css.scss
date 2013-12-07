@@ -5,22 +5,24 @@ body {
   -o-background-size: cover !important;
   background-size: cover !important;
   background-attachment: fixed !important;
+  font-size: 15px;
+}
+
+body, h2, h3, h4, h5, h6, label {
   color: #36312d;
   font-family: Enriqueta, georgia, serif;
-  font-size: 15px;
-  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.6;
 }
 
 h1 {
   color: #e94f1d;
-  font-weight: 300;
-}
+  font: {
+    family: Muli, Helvetica, Arial, sans-serif;
+    weight: 300;
+  }
+  margin-bottom: 30px;
 
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: Muli, Helvetica, Arial, sans-serif;
 }
 
 .content-container {
@@ -99,6 +101,7 @@ div {
 }
 
 .silly-nav {
+  padding-left: 4px;
   a {
     display: inline-block;
     margin: 0 20px 0 0;
