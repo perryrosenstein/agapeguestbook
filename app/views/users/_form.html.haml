@@ -37,6 +37,10 @@
     = f.label :why_in_sf, "What brings you to San Francisco?", :class => "col-sm-2 control-label"
     .col-sm-10
       = f.text_area :why_in_sf, :class => "form-control"
+  .form-group#user-note-section.hide
+    = f.label :note, "Leave us a note! Favorite memory? Words of wisdom, thanks, or constructive criticism?", :class => "col-sm-2 control-label"
+    .col-sm-10
+      = f.text_area :note, :class => "form-control"
   .form-group
     .col-sm-10.col-sm-offset-2
       %span
