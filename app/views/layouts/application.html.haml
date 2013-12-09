@@ -7,6 +7,7 @@
   = javascript_include_tag "application", "data-turbolinks-track" => true
   %script{src: "http://code.jquery.com/jquery-1.10.1.min.js"}
   %script{src: "http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"}
+  -#refactor this later!!!
   = csrf_meta_tags
 %body{:id => params[:controller] + '-' + params[:action] }
   .container.content-container.welcome
@@ -16,13 +17,12 @@
           = link_to "Ohai#{', ' + current_user.first_name if current_user}. Welcome to the Agape Guestbook.", root_url
         %p#bonnie-greeting
           We're so glad you're home!
-        - unless current_user
-          %p
-            If you've ever been a guest at Agape, even just for a night crashing on the fluff, why don't you take a minute to #{link_to "sign our guest book", "/auth/facebook", id: "sign_in"}?
-          %p
-            (It'll ask you to connect to Facebook. Don't be alarmed. We only ask so that we can add your beautiful face to the site.)
-        %p.silly-nav
-          = link_to "Home", root_url if current_user
-          = link_to "Update profile", edit_user_path(current_user.id) if current_user
-          = link_to "Sign out", signout_path, id: "sign_out" if current_user
+        - if current_user
+          %p.silly-nav
+            = link_to "Home", root_url
+            = link_to "Update profile", edit_user_path(current_user.id)
+            = link_to "Sign out", signout_path, id: "sign_out"
+        - else
+          %p Incoming guests: #{link_to "Sign in!", "/auth/facebook", id: "sign_in"} Let us know you're coming and tell us a little bit about yourself. (It'll ask you to connect to Facebook. Don't be alarmed. We only ask so that we can add your beautiful face to the site.)
+          %p Outgoing guests: #{link_to "Leave a parting note!", "/auth/facebook", id: "sign_in"} We'd love to hear about your stay and keep a little note to remember you by.
   = yield

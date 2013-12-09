@@ -48,5 +48,4 @@ $(function() {
     $("#user_departure_date").blur(function() {
         show_note();
     });
-
 });
