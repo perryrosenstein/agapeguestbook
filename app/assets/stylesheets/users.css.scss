@@ -3,15 +3,20 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #users-index {
-  .fb-pic {
-    display: block;
-    height: auto;
-    margin-bottom: 20px;
-    width: 100%;
+  .user-profile {
+    .fb-pic {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      display: block;
+      height: auto;
+      margin-bottom: 20px;
+      width: 100%;
+    }
   }
   .user-image {
     p {
       background: black;
+      border-radius: 5px;
       bottom: 40px;
       color: white;
       opacity: .85;

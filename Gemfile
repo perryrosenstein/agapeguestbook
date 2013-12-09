@@ -58,7 +58,7 @@ gem 'annotate'
 gem "twitter-bootstrap-rails"
 
 # Use Facebook for authentication
-gem 'omniauth-facebook'
+gem 'omniauth-facebook', '1.4.0'
 
 # Create application.yml, git ignore it, etc.
 gem 'figaro'
