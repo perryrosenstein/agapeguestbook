@@ -22,10 +22,10 @@
     <file path="/20131124234056_create_residents.rb" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1385763997337" ignored="false" />
     <file path="/Dummy.txt" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1385337739680" ignored="false" />
     <file path="/seeds.rb" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1385763858896" ignored="false" />
-    <file path="/user_mailer.rb" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386632568311" ignored="false" />
-    <file path="/user_created.html.haml" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386632470241" ignored="false" />
+    <file path="/user_mailer.rb" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386645507580" ignored="false" />
+    <file path="/user_created.html.haml" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386645561973" ignored="false" />
     <file path="/setup_mail.rb" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386388005635" ignored="false" />
-    <file path="/application.yml" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386387924413" ignored="false" />
+    <file path="/application.yml" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386645390881" ignored="false" />
     <file path="/_guest_section.html.haml" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386630376196" ignored="false" />
     <file path="/routes.rb" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386118948004" ignored="false" />
     <file path="/sessions_controller.rb" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386631629842" ignored="false" />
@@ -54,19 +54,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
+      <file leaf-file-name="user_mailer.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/mailers/user_mailer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="0" selection-start="1334" selection-end="1334" vertical-scroll-proportion="-12.115385">
+            <state line="6" column="52" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_mailer.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/mailers/user_mailer.rb">
+      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="16" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -75,16 +75,25 @@
       <file leaf-file-name="application.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0">
+            <state line="12" column="14" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="facebook.js.coffee.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="user_created.html.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/user_mailer/user_created.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="42" selection-start="535" selection-end="535" vertical-scroll-proportion="0.50970876">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="facebook.js.coffee.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/facebook.js.coffee.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="1" selection-end="615" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="1" selection-end="615" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -94,15 +103,6 @@
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state line="39" column="1" selection-start="777" selection-end="777" vertical-scroll-proportion="-22.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="76" selection-start="197" selection-end="197" vertical-scroll-proportion="0.25">
               <folding />
             </state>
           </provider>
@@ -161,15 +161,15 @@
         <option value="$PROJECT_DIR$/app/views/users/_guest_section.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/views/user_mailer/user_created.html.haml" />
-        <option value="$PROJECT_DIR$/app/mailers/user_mailer.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/views/users/_form.html.haml" />
-        <option value="$PROJECT_DIR$/config/application.yml" />
         <option value="$PROJECT_DIR$/app/views/users/edit.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/users.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/facebook.js.coffee.erb" />
+        <option value="$PROJECT_DIR$/config/application.yml" />
+        <option value="$PROJECT_DIR$/app/mailers/user_mailer.rb" />
+        <option value="$PROJECT_DIR$/app/views/user_mailer/user_created.html.haml" />
       </list>
     </option>
   </component>
@@ -870,23 +870,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/_guest_section.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="20" selection-start="270" selection-end="270" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/user_mailer/user_created.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="86" selection-start="409" selection-end="409" vertical-scroll-proportion="-8.125">
           <folding />
         </state>
       </provider>
@@ -933,13 +919,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/mailers/user_mailer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="16" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/users.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="12" selection-start="1315" selection-end="1315" vertical-scroll-proportion="0.0">
@@ -968,16 +947,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.yml">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/facebook.js.coffee.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="1" selection-end="615" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/facebook.js.coffee.erb">
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="1" selection-end="615" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="14" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mailers/user_mailer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="52" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/user_mailer/user_created.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="42" selection-start="535" selection-end="535" vertical-scroll-proportion="0.50970876">
           <folding />
         </state>
       </provider>
