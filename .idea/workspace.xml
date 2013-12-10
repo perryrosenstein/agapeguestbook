@@ -22,7 +22,7 @@
     <file path="/20131124234056_create_residents.rb" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1385763997337" ignored="false" />
     <file path="/Dummy.txt" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1385337739680" ignored="false" />
     <file path="/seeds.rb" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1385763858896" ignored="false" />
-    <file path="/user_mailer.rb" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386707078238" ignored="false" />
+    <file path="/user_mailer.rb" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386717194543" ignored="false" />
     <file path="/user_created.html.haml" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386645561973" ignored="false" />
     <file path="/setup_mail.rb" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386388005635" ignored="false" />
     <file path="/application.yml" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386645390881" ignored="false" />
@@ -63,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_mailer.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="user_mailer.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/mailers/user_mailer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="108" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0">
+            <state line="7" column="5" selection-start="330" selection-end="330" vertical-scroll-proportion="0.24082568">
               <folding />
             </state>
           </provider>
@@ -81,10 +81,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="development.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="development.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="42" selection-start="917" selection-end="917" vertical-scroll-proportion="0.4472477">
+            <state line="19" column="57" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -103,7 +103,9 @@
         <entry file="file://$PROJECT_DIR$/config/application.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="12" column="14" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
-              <folding />
+              <folding>
+                <marker date="1386645465000" expanded="true" signature="438:610" placeholder="production:" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -120,7 +122,7 @@
       <file leaf-file-name="user_created.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/user_mailer/user_created.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="42" selection-start="535" selection-end="535" vertical-scroll-proportion="-8.75">
+            <state line="15" column="41" selection-start="577" selection-end="577" vertical-scroll-proportion="-9.375">
               <folding />
             </state>
           </provider>
@@ -164,12 +166,12 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/facebook.js.coffee.erb" />
         <option value="$PROJECT_DIR$/config/application.yml" />
-        <option value="$PROJECT_DIR$/app/views/user_mailer/user_created.html.haml" />
-        <option value="$PROJECT_DIR$/app/mailers/user_mailer.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/views/users/edit.html.haml" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/app/views/user_mailer/user_created.html.haml" />
+        <option value="$PROJECT_DIR$/app/mailers/user_mailer.rb" />
       </list>
     </option>
   </component>
@@ -926,30 +928,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/user_mailer/user_created.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="42" selection-start="535" selection-end="535" vertical-scroll-proportion="-8.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="14" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <marker date="1386645465000" expanded="true" signature="438:610" placeholder="production:" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/mailers/user_mailer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="108" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -968,6 +958,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/user_mailer/user_created.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="41" selection-start="577" selection-end="577" vertical-scroll-proportion="-9.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="0" selection-start="2333" selection-end="2333" vertical-scroll-proportion="0.0">
@@ -977,7 +974,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="42" selection-start="917" selection-end="917" vertical-scroll-proportion="0.4472477">
+        <state line="19" column="57" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mailers/user_mailer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="5" selection-start="330" selection-end="330" vertical-scroll-proportion="0.24082568">
           <folding />
         </state>
       </provider>
