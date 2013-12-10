@@ -8,15 +8,15 @@
   .form-group
     = f.label :first_name, :class => "col-sm-2 control-label"
     .col-sm-10
-      = f.text_field :first_name, :class => "form-control"
+      = f.text_field :first_name, :class => "form-control", :required => "required"
   .form-group
     = f.label :last_name, :class => "col-sm-2 control-label"
     .col-sm-10
-      = f.text_field :last_name, :class => "form-control"
+      = f.text_field :last_name, :class => "form-control", :required => "required"
   .form-group
     = f.label :email, :class => "col-sm-2 control-label"
     .col-sm-10
-      = f.text_field :email, :class => "form-control"
+      = f.text_field :email, :class => "form-control", :required => "required"
   .form-group
     = f.label :host, :class => "col-sm-2 control-label"
     .col-sm-10
@@ -24,15 +24,15 @@
   .form-group
     = f.label :arrival_date, :class => "col-sm-2 control-label"
     .col-sm-10
-      = f.date_field :arrival_date, :class => "form-control"
+      = f.date_field :arrival_date, :class => "form-control", :required => "required"
   .form-group
     = f.label :departure_date, :class => "col-sm-2 control-label"
     .col-sm-10
-      = f.date_field :departure_date, :class => "form-control"
+      = f.date_field :departure_date, :class => "form-control", :required => "required"
   .form-group
     = f.label :where_from, "Where are you from?", :class => "col-sm-2 control-label"
     .col-sm-10
-      = f.text_field :where_from, :class => "form-control"
+      = f.text_field :where_from, :class => "form-control", :required => "required"
   .form-group
     = f.label :why_in_sf, "What brings you to San Francisco?", :class => "col-sm-2 control-label"
     .col-sm-10

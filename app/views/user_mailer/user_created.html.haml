@@ -12,7 +12,7 @@
         = link_to "Check them out.", "#{root_url}?user_id=#{@user.id}"
       %li
         = link_to "Email them if you have any questions.", "mailto:#{@user.email}", :target => "_blank"
-      -#
-        %li
-          = link_to "Spread the good word to Agape.", "mailto:AgapeSF@googlegroups.com?subject="
-          = link_to "Spread the good word to Agape.", "mailto:AgapeSF@googlegroups.com?subject="
+      %li
+        - subject = @user.first_name + "is coming!"
+        - body = "#{@user.first_name} #{@user.last_name} is coming! Get excited.%0A%0A#{@user_url}"
+        = link_to "Email Agape to share the good news", "mailto:agapesf@googlegroups.com?subject=#{subject}&body=#{body}"
