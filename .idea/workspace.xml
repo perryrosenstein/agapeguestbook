@@ -15,7 +15,7 @@
     <file path="/user.rb" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386271420525" ignored="false" />
     <file path="/users.js" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386449842184" ignored="false" />
     <file path="/Gemfile" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386277787424" ignored="false" />
-    <file path="/a.dummy" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386707063275" ignored="false" />
+    <file path="/a.dummy" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386707145140" ignored="false" />
     <file path="/20131124232836_resident.rb" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1385335879733" ignored="false" />
     <file path="/20131018073757_create_users.rb" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1386271370706" ignored="false" />
     <file path="/20131124233558_create_residents.rb" changelist="eb1a7e9b-e796-4853-8811-5efd16217c40" time="1385336254072" ignored="false" />
@@ -81,10 +81,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="development.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="development.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0">
+            <state line="22" column="42" selection-start="917" selection-end="917" vertical-scroll-proportion="0.4472477">
               <folding />
             </state>
           </provider>
@@ -93,7 +93,7 @@
       <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="58" column="0" selection-start="2333" selection-end="2333" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -126,10 +126,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.html.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="edit.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="59" selection-start="3377" selection-end="3377" vertical-scroll-proportion="0.60902256">
+            <state line="35" column="14" selection-start="2108" selection-end="2108" vertical-scroll-proportion="-21.875">
               <folding />
             </state>
           </provider>
@@ -154,8 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/users/_modals.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/users.js" />
         <option value="$PROJECT_DIR$/app/views/users/_guest_section.html.haml" />
@@ -170,6 +168,8 @@
         <option value="$PROJECT_DIR$/app/mailers/user_mailer.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/views/users/edit.html.haml" />
+        <option value="$PROJECT_DIR$/config/environments/development.rb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
   </component>
@@ -947,20 +947,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/mailers/user_mailer.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="108" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0">
@@ -977,7 +963,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="59" selection-start="3377" selection-end="3377" vertical-scroll-proportion="0.60902256">
+        <state line="35" column="14" selection-start="2108" selection-end="2108" vertical-scroll-proportion="-21.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="0" selection-start="2333" selection-end="2333" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="42" selection-start="917" selection-end="917" vertical-scroll-proportion="0.4472477">
           <folding />
         </state>
       </provider>
