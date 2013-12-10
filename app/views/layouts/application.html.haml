@@ -9,6 +9,7 @@
   %meta{property: "og:description", content: '"What is there more kindly than the feeling between host and guest?" - Aeschylus'}
   %meta{property: "og:type", content: "website"}
   %meta{property: "og:image", content: "#{root_url}agape-logo-1000.png"}
+  %meta{property: "og:url", content: "#{request.protocol}#{request.host_with_port}#{request.fullpath}" }
   %meta{content: "1000", property: "og:image:width"}
   %meta{content: "626", property: "og:image:height"}
   = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
